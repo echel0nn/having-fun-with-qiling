@@ -1,0 +1,6 @@
+# environment variables:
+AFL_AUTORESUME=1
+AFL_KILL_SIGNAL=9
+AFL_PATH=/tools/qiling/examples/fuzzing/airties5630/AFLplusplus
+# command line:
+'afl-fuzz' '-t' '40' '-i' 'afl_inputs' '-o' 'afl_outputs' '-U' '--' 'python3' './airties5630_mips32.py' '@@'
